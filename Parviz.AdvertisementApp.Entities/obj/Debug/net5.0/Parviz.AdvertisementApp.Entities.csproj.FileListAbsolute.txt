@@ -1,0 +1,12 @@
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\bin\Debug\net5.0\Parviz.AdvertisementApp.Entities.deps.json
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\bin\Debug\net5.0\Parviz.AdvertisementApp.Entities.dll
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\bin\Debug\net5.0\Parviz.AdvertisementApp.Entities.pdb
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\obj\Debug\net5.0\Parviz.AdvertisementApp.Entities.csproj.AssemblyReference.cache
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\obj\Debug\net5.0\Parviz.AdvertisementApp.Entities.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\obj\Debug\net5.0\Parviz.AdvertisementApp.Entities.AssemblyInfoInputs.cache
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\obj\Debug\net5.0\Parviz.AdvertisementApp.Entities.AssemblyInfo.cs
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\obj\Debug\net5.0\Parviz.AdvertisementApp.Entities.csproj.CoreCompileInputs.cache
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\obj\Debug\net5.0\Parviz.AdvertisementApp.Entities.dll
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\obj\Debug\net5.0\refint\Parviz.AdvertisementApp.Entities.dll
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\obj\Debug\net5.0\Parviz.AdvertisementApp.Entities.pdb
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Entities\obj\Debug\net5.0\ref\Parviz.AdvertisementApp.Entities.dll
