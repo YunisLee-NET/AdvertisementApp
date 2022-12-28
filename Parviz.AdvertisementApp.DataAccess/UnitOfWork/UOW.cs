@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Parviz.AdvertisementApp.DataAccess.UnitOfWork
 {
-    public class UOW
+    public class UOW:IUOW
     {
         private readonly AdvertisementContext _context;
 

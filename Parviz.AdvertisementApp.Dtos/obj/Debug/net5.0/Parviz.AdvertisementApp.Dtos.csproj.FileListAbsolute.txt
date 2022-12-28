@@ -1,0 +1,12 @@
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\bin\Debug\net5.0\Parviz.AdvertisementApp.Dtos.deps.json
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\bin\Debug\net5.0\Parviz.AdvertisementApp.Dtos.dll
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\bin\Debug\net5.0\Parviz.AdvertisementApp.Dtos.pdb
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\obj\Debug\net5.0\Parviz.AdvertisementApp.Dtos.csproj.AssemblyReference.cache
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\obj\Debug\net5.0\Parviz.AdvertisementApp.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\obj\Debug\net5.0\Parviz.AdvertisementApp.Dtos.AssemblyInfoInputs.cache
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\obj\Debug\net5.0\Parviz.AdvertisementApp.Dtos.AssemblyInfo.cs
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\obj\Debug\net5.0\Parviz.AdvertisementApp.Dtos.csproj.CoreCompileInputs.cache
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\obj\Debug\net5.0\Parviz.AdvertisementApp.Dtos.dll
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\obj\Debug\net5.0\refint\Parviz.AdvertisementApp.Dtos.dll
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\obj\Debug\net5.0\Parviz.AdvertisementApp.Dtos.pdb
+E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.Dtos\obj\Debug\net5.0\ref\Parviz.AdvertisementApp.Dtos.dll
