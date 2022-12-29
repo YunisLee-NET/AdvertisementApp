@@ -41,6 +41,7 @@ namespace Parviz.AdvertisementApp.Business.Services
             {
                 var mapped = _mapper.Map<T>(dto);
                 await _uow.GetRepository<T>().AddAsync(mapped);
+                await _uow.SaveChangesAsync();
                 return new Response<CreateDto>(ResponseType.Success, dto);
             }
             return new Response<CreateDto>(ResponseType.ValidationError, validationresult.ConvertValidationFromCustomValidationError(), dto);
@@ -69,6 +70,7 @@ namespace Parviz.AdvertisementApp.Business.Services
             var dataId = await _uow.GetRepository<T>().Find(id);
             if (dataId == null)
             {
+                await _uow.SaveChangesAsync();
                 return new Response<IDto>(ResponseType.NotFound, $"{id} nömrəli məlumat tapılmadı.");
             }
             _uow.GetRepository<T>().Remove(dataId);
@@ -83,6 +85,7 @@ namespace Parviz.AdvertisementApp.Business.Services
                 var unchangedData = await _uow.GetRepository<T>().Find(dto.Id);
                 var mappedData = _mapper.Map<T>(dto);
                 _uow.GetRepository<T>().Update(mappedData, unchangedData);
+                await _uow.SaveChangesAsync();
                 return new Response<UpdateDto>(ResponseType.Success, dto);
             }
             return new Response<UpdateDto>(ResponseType.ValidationError, resultValidation.ConvertValidationFromCustomValidationError(), dto);

@@ -1,0 +1,62 @@
+﻿@model UserCreateModel
+@{
+    ViewData["Title"] = "SignUp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="background: rgb(131,58,180);background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);" class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 style="color: white;" class="display-4"><strong>Qeydiyyat</strong></h1>
+        <p style="color: white;" class="lead">Təqdim edilən elanlara birbaşa müraciət etmək üçün yeni hesab açın.</p>
+        <br />
+    </div>
+</div>
+
+
+<form asp-action="SignUp" asp-controller="Account">
+    <div style="color:darkred" class="text-bg-danger" asp-validation-summary="All"></div>
+    <div class="container-fluid my-3">
+        <div class="form-floating mb-3">
+            <input type="text" asp-for="FirstName" class="form-control" id="floatingName">
+            <label for="floatingInput">Adınız</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" asp-for="Surname" class="form-control" id="floatingSurname">
+            <label for="floatingInput">Soyadınız</label>
+        </div>
+        <br />
+        <div class="form-floating">
+            <input type="text" asp-for="UserName" class="form-control" id="floatingUsername">
+            <label for="floatingInput">İstifadəçi adınız</label>
+        </div>
+        <br />
+        <div class="form-floating">
+            <input type="number" asp-for="PhoneNumber" class="form-control" id="floatingPhone">
+            <label for="floatingInput">Telefon nömrəniz</label>
+        </div>
+        <br />
+        <select class="form-select" asp-items="@Model.Gender" name="@(nameof(Model.GenderId))" aria-label="Default select example">
+            <option value="0">Cinsiyyət seçin</option>
+        </select>
+        <br />
+        <div class="form-floating">
+            <input type="password" class="form-control" asp-for="Password" id="floatingPassword">
+            <label for="floatingPassword">Şifrə</label>
+        </div>
+        <br />
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" asp-for="ConfirmPassword">
+            <label for="floatingPassword">Təkrar şifrə</label>
+        </div>
+        <br />
+        <div>
+            <button type="submit" class="btn btn-outline-primary">Qeydiyyatdan keç</button>
+        </div>
+        <br />
+    </div>
+</form>
+

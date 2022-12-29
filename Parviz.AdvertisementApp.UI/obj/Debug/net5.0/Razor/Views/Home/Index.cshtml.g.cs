@@ -19,8 +19,15 @@ using Parviz.AdvertisementApp.Dtos;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "E:\Dersler\MVC\Parviz.AdvertisementApp\Parviz.AdvertisementApp.UI\Views\_ViewImports.cshtml"
+using Parviz.AdvertisementApp.UI.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fbecc7c0a570a2b484b248a9d3afc96f103dec6e", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"eddca341ec840f0cb1a35a71b90b21a18cef1f8d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"66c51167584eb5d6c85e0ccfa1179c2db675667f", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<ProvidedServiceListDto>>
     #nullable disable
@@ -98,7 +105,7 @@ WriteAttributeValue(" ", 861, i%2==0?"order-lg-2":"", 862, 25, false);
             WriteAttributeValue(" ", 887, "", 888, 1, true);
             EndWriteAttribute();
             WriteLiteral(">\r\n                    <div class=\"p-5\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "fbecc7c0a570a2b484b248a9d3afc96f103dec6e5514", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "fbecc7c0a570a2b484b248a9d3afc96f103dec6e5728", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
