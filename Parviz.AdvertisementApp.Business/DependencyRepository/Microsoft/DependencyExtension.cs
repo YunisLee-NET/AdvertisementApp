@@ -40,6 +40,7 @@ namespace Parviz.AdvertisementApp.Business.DependencyRepository.Microsoft
             services.AddTransient<IValidator<AppUserCreateDto>, AppUserCreateDtoValidator>();
             services.AddTransient<IValidator<GenderCreateDto>, GenderCreateDtoValidator>();
             services.AddTransient<IValidator<GenderUpdateDto>, GenderUpdateDtoValidator>();
+            services.AddTransient<IValidator<AppUserLoginDto>, AppUserLoginDtoValidator>();
 
             services.AddScoped<IProvidedServiceService, ProvidedServiceService>();
             services.AddScoped<IAdvertisementService, AdvertisementService>();

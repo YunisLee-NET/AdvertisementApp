@@ -3,6 +3,7 @@ using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Parviz.AdvertisementApp.Business.Interfaces;
+using Parviz.AdvertisementApp.Common.Enums;
 using Parviz.AdvertisementApp.Dtos;
 using Parviz.AdvertisementApp.UI.Extensions;
 using Parviz.AdvertisementApp.UI.Models;
@@ -38,8 +39,8 @@ namespace Parviz.AdvertisementApp.UI.Controllers
             var validationresult = _userValidator.Validate(model);
             if (validationresult.IsValid)
             {
-                var convertToDto=_mapper.Map<AppUserCreateDto>(model);
-                var response = await _appUserService.CreateAsync(convertToDto);
+                var convertToDto = _mapper.Map<AppUserCreateDto>(model);
+                var response = await _appUserService.CreateWithRoleAsync(convertToDto, (int)RoleType.Member);
                 return this.ResponseRedirectAction(response, "Index", "Home");
             }
             else
@@ -48,11 +49,16 @@ namespace Parviz.AdvertisementApp.UI.Controllers
                 {
                     ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
                     var genderdata = await _genderService.GetAllAsync();
-                    model.Gender = new SelectList(genderdata.Data, "Id", "Definition",model.GenderId);
+                    model.Gender = new SelectList(genderdata.Data, "Id", "Definition");
 
                 }
                 return View(model);
             }
+        }
+
+        public IActionResult SignIn()
+        {
+            return View();
         }
     }
 }

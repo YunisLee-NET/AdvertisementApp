@@ -8,6 +8,9 @@ namespace Parviz.AdvertisementApp.Common
 {
     public class Response<T> : Response, IResponse<T>
     {
+        
+        private List<CustomValidationError> customValidationErrors;
+
         public T Data { get; set; }
         public List<CustomValidationError> Errors { get; set; }
 
@@ -27,5 +30,7 @@ namespace Parviz.AdvertisementApp.Common
             Data = data;
             Errors = customValidationErrors;
         }
+
+        
     }
 }

@@ -1,5 +1,6 @@
 using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -10,6 +11,7 @@ using Parviz.AdvertisementApp.Business.Helper;
 using Parviz.AdvertisementApp.UI.AutoMapper;
 using Parviz.AdvertisementApp.UI.Models;
 using Parviz.AdvertisementApp.UI.ValidationRules;
+using System;
 
 namespace Parviz.AdvertisementApp.UI
 {
@@ -29,6 +31,17 @@ namespace Parviz.AdvertisementApp.UI
             services.AddDependency(Configuration);
             services.AddControllersWithViews();
             services.AddTransient<IValidator<UserCreateModel>, UserCreateModelValidator>();
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(option =>
+            {
+                option.Cookie.Name = "ParvizCookie";
+                option.Cookie.HttpOnly = true;
+                option.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict;
+                option.Cookie.SecurePolicy = Microsoft.AspNetCore.Http.CookieSecurePolicy.SameAsRequest;
+                option.ExpireTimeSpan = TimeSpan.FromDays(30);
+                option.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Account/SignIn");
+                option.LogoutPath = new Microsoft.AspNetCore.Http.PathString("/Account/LogOut");
+                option.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("/Account/AccessDenied");
+            });
 
             var profiles = MapProfileHelper.GetProfiles();
             profiles.Add(new UserCreateModelProfile());
@@ -54,6 +67,8 @@ namespace Parviz.AdvertisementApp.UI
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
